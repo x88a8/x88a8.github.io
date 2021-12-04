@@ -9,11 +9,7 @@
 <script src="https://d3js.org/d3.v4.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-  crossorigin="anonymous"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
     <link href="master.css" rel="stylesheet" >
     <!--<link href="leaflet/leaflet.css" rel="stylesheet">
     <script src="leaflet/leaflet.js"/>-->
@@ -52,7 +48,11 @@
     	if (urlParams.has('substance')) {
     		substance = urlParams.get('substance');
 	        var csv_dir_substance = prefix + substance + '.csv';
-          $(".substance_desc").load("substances/" + substance + ".html");
+          $(document).ready(function () { 
+            $("button").click(function () { 
+          $(".substance_desc").load('substances/' + substance + '.html'); 
+        }); 
+      });
     	} else {
 	        var csv_dir_substance = prefix + 'default.csv';
         }
