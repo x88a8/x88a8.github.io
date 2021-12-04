@@ -1,0 +1,247 @@
+name,code,status
+Antigua and Barbuda,ATG,-2
+Algeria,DZA,-2
+Azerbaijan,AZE,-2
+Albania,ALB,-2
+Armenia,ARM,-2
+Angola,AGO,-2
+American Samoa,ASM,-2
+Argentina,ARG,-2
+Australia,AUS,-2
+Bahrain,BHR,-2
+Barbados,BRB,-2
+Bermuda,BMU,-2
+Bahamas,BHS,-2
+Bangladesh,BGD,-2
+Belize,BLZ,-2
+Bosnia and Herzegovina,BIH,-2
+Bolivia,BOL,-2
+Burma,MMR,-2
+Benin,BEN,-2
+Solomon Islands,SLB,-2
+Brazil,BRA,-2
+Bulgaria,BGR,-2
+Brunei Darussalam,BRN,-2
+Canada,CAN,-2
+Cambodia,KHM,-2
+Sri Lanka,LKA,-2
+Congo,COG,-2
+Democratic Republic of the Congo,COD,-2
+Burundi,BDI,-2
+China,CHN,-2
+Afghanistan,AFG,-2
+Bhutan,BTN,-2
+Chile,CHL,-2
+Cayman Islands,CYM,-2
+Cameroon,CMR,-2
+Chad,TCD,-2
+Comoros,COM,-2
+Colombia,COL,-2
+Costa Rica,CRI,-2
+Central African Republic,CAF,-2
+Cuba,CUB,-2
+Cape Verde,CPV,-2
+Cook Islands,COK,-2
+Cyprus,CYP,-2
+Denmark,DNK,-2
+Djibouti,DJI,-2
+Dominica,DMA,-2
+Dominican Republic,DOM,-2
+Ecuador,ECU,-2
+Egypt,EGY,-2
+Ireland,IRL,-2
+Equatorial Guinea,GNQ,-2
+Estonia,EST,-2
+Eritrea,ERI,-2
+El Salvador,SLV,-2
+Ethiopia,ETH,-2
+Austria,AUT,-2
+Czech Republic,CZE,-2
+French Guiana,GUF,-2
+Finland,FIN,-2
+Fiji,FJI,-2
+Falkland Islands (Malvinas),FLK,-2
+Micronesia," Federated States of",-2
+French Polynesia,PYF,-2
+France,FRA,-2
+Gambia,GMB,-2
+Gabon,GAB,-2
+Georgia,GEO,-2
+Ghana,GHA,-2
+Grenada,GRD,-2
+Greenland,GRL,-2
+Germany,DEU,-2
+Guam,GUM,-2
+Greece,GRC,-2
+Guatemala,GTM,-2
+Guinea,GIN,-2
+Guyana,GUY,-2
+Haiti,HTI,-2
+Honduras,HND,-2
+Croatia,HRV,-2
+Hungary,HUN,-2
+Iceland,ISL,-2
+India,IND,-2
+Iran (Islamic Republic of),IRN,-2
+Israel,ISR,-2
+Italy,ITA,-2
+Cote d'Ivoire,CIV,-2
+Iraq,IRQ,-2
+Japan,JPN,-2
+Jamaica,JAM,-2
+Jordan,JOR,-2
+Kenya,KEN,-2
+Kyrgyzstan,KGZ,-2
+Korea," Democratic People's Republic of",-2
+Kiribati,KIR,-2
+Korea," Republic of",-2
+Kuwait,KWT,-2
+Kazakhstan,KAZ,-2
+Lao People's Democratic Republic,LAO,-2
+Lebanon,LBN,-2
+Latvia,LVA,-2
+Belarus,BLR,-2
+Lithuania,LTU,-2
+Liberia,LBR,-2
+Slovakia,SVK,-2
+Liechtenstein,LIE,-2
+Libyan Arab Jamahiriya,LBY,-2
+Madagascar,MDG,-2
+Martinique,MTQ,-2
+Mongolia,MNG,-2
+Montserrat,MSR,-2
+The former Yugoslav Republic of Macedonia,MKD,-2
+Mali,MLI,-2
+Morocco,MAR,-2
+Mauritius,MUS,-2
+Mauritania,MRT,-2
+Malta,MLT,-2
+Oman,OMN,-1
+Maldives,MDV,-2
+Mexico,MEX,-2
+Malaysia,MYS,-2
+Mozambique,MOZ,-2
+Malawi,MWI,-2
+New Caledonia,NCL,-2
+Niue,NIU,-2
+Niger,NER,-2
+Aruba,ABW,-2
+Anguilla,AIA,-2
+Belgium,BEL,-2
+Hong Kong,HKG,-2
+Northern Mariana Islands,MNP,-2
+Faroe Islands,FRO,-2
+Andorra,AND,-2
+Gibraltar,GIB,-2
+Isle of Man,IMN,-2
+Luxembourg,LUX,-2
+Macau,MAC,-2
+Monaco,MCO,-2
+Palestine,PSE,-2
+Montenegro,MNE,-2
+Mayotte,MYT,-2
+Åland Islands,ALA,-2
+Norfolk Island,NFK,-2
+Cocos (Keeling) Islands,CCK,-2
+Antarctica,ATA,-2
+Bouvet Island,BVT,-2
+French Southern and Antarctic Lands,ATF,-2
+Heard Island and McDonald Islands,HMD,-2
+British Indian Ocean Territory,IOT,-2
+Christmas Island,CXR,-2
+United States Minor Outlying Islands,UMI,-2
+Vanuatu,VUT,-2
+Nigeria,NGA,-2
+Netherlands,NLD,-2
+Norway,NOR,-2
+Nepal,NPL,-2
+Nauru,NRU,-2
+Suriname,SUR,-2
+Nicaragua,NIC,-2
+New Zealand,NZL,-2
+Paraguay,PRY,-2
+Peru,PER,-2
+Pakistan,PAK,-2
+Poland,POL,-2
+Panama,PAN,-2
+Portugal,PRT,-2
+Papua New Guinea,PNG,-2
+Guinea-Bissau,GNB,-2
+Qatar,QAT,-2
+Reunion,REU,-2
+Romania,ROU,-2
+Republic of Moldova,MDA,-2
+Philippines,PHL,-2
+Puerto Rico,PRI,-2
+Russia,RUS,-2
+Rwanda,RWA,-2
+Saudi Arabia,SAU,-2
+Saint Kitts and Nevis,KNA,-2
+Seychelles,SYC,-2
+South Africa,ZAF,-2
+Lesotho,LSO,-2
+Botswana,BWA,-2
+Senegal,SEN,-2
+Slovenia,SVN,-2
+Sierra Leone,SLE,-2
+Singapore,SGP,-2
+Somalia,SOM,-2
+Spain,ESP,-2
+Saint Lucia,LCA,-2
+Sudan,SDN,-2
+Sweden,SWE,-2
+Syrian Arab Republic,SYR,-2
+Switzerland,CHE,-2
+Trinidad and Tobago,TTO,-2
+Thailand,THA,-2
+Tajikistan,TJK,-2
+Tokelau,TKL,-2
+Tonga,TON,-2
+Togo,TGO,-2
+Sao Tome and Principe,STP,-2
+Tunisia,TUN,-2
+Turkey,TUR,-2
+Tuvalu,TUV,-2
+Turkmenistan,TKM,-2
+United Republic of Tanzania,TZA,-2
+Uganda,UGA,-2
+United Kingdom,GBR,-2
+Ukraine,UKR,-2
+United States,USA,-2
+Burkina Faso,BFA,-2
+Uruguay,URY,-2
+Uzbekistan,UZB,-2
+Saint Vincent and the Grenadines,VCT,-2
+Venezuela,VEN,-2
+British Virgin Islands,VGB,-2
+Viet Nam,VNM,-2
+United States Virgin Islands,VIR,-2
+Namibia,NAM,-2
+Wallis and Futuna Islands,WLF,-2
+Samoa,WSM,-2
+Swaziland,SWZ,-2
+Yemen,YEM,-2
+Zambia,ZMB,-2
+Zimbabwe,ZWE,-2
+Indonesia,IDN,-2
+Guadeloupe,GLP,-2
+Netherlands Antilles,ANT,-2
+United Arab Emirates,ARE,-2
+Timor-Leste,TLS,-2
+Pitcairn Islands,PCN,-2
+Palau,PLW,-2
+Marshall Islands,MHL,-2
+Saint Pierre and Miquelon,SPM,-2
+Saint Helena,SHN,-2
+San Marino,SMR,-2
+Turks and Caicos Islands,TCA,-2
+Western Sahara,ESH,-2
+Serbia,SRB,-2
+Holy See (Vatican City),VAT,-2
+Svalbard,SJM,-2
+Saint Martin,MAF,-2
+Saint Barthelemy,BLM,-2
+Guernsey,GGY,-2
+Jersey,JEY,-2
+South Georgia South Sandwich Islands,SGS,-2
+Taiwan,TWN,-2
