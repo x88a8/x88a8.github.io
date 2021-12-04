@@ -55,7 +55,7 @@ Estonia,EST,-2
 Eritrea,ERI,-2
 El Salvador,SLV,-2
 Ethiopia,ETH,-2
-Austria,AUT,4
+Austria,AUT,-2
 Czech Republic,CZE,-2
 French Guiana,GUF,-2
 Finland,FIN,-2
@@ -70,7 +70,7 @@ Georgia,GEO,-2
 Ghana,GHA,-2
 Grenada,GRD,-2
 Greenland,GRL,-2
-Germany,DEU,4
+Germany,DEU,1
 Guam,GUM,-2
 Greece,GRC,-2
 Guatemala,GTM,-2
@@ -87,7 +87,7 @@ Israel,ISR,-2
 Italy,ITA,-2
 Cote d'Ivoire,CIV,-2
 Iraq,IRQ,-2
-Japan,JPN,-2
+Japan,JPN,1
 Jamaica,JAM,-2
 Jordan,JOR,-2
 Kenya,KEN,-2
@@ -99,7 +99,7 @@ Kuwait,KWT,-2
 Kazakhstan,KAZ,-2
 Lao People's Democratic Republic,LAO,-2
 Lebanon,LBN,-2
-Latvia,LVA,1
+Latvia,LVA,-2
 Belarus,BLR,-2
 Lithuania,LTU,-2
 Liberia,LBR,-2
@@ -189,9 +189,9 @@ Somalia,SOM,-2
 Spain,ESP,-2
 Saint Lucia,LCA,-2
 Sudan,SDN,-2
-Sweden,SWE,-2
+Sweden,SWE,1
 Syrian Arab Republic,SYR,-2
-Switzerland,CHE,4
+Switzerland,CHE,-2
 Trinidad and Tobago,TTO,-2
 Thailand,THA,-2
 Tajikistan,TJK,-2
@@ -200,14 +200,14 @@ Tonga,TON,-2
 Togo,TGO,-2
 Sao Tome and Principe,STP,-2
 Tunisia,TUN,-2
-Turkey,TUR,-2
+Turkey,TUR,1
 Tuvalu,TUV,-2
 Turkmenistan,TKM,-2
 Tanzania,TZA,-2
 Uganda,UGA,-2
 United Kingdom,GBR,1
 Ukraine,UKR,-2
-United States,USA,1
+United States,USA,-2
 Burkina Faso,BFA,-2
 Uruguay,URY,-2
 Uzbekistan,UZB,-2
