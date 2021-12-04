@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrugsMap</title>
+    <!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+    <link href="master.css" rel="stylesheet" >
+    <!--<link href="leaflet/leaflet.css" rel="stylesheet">
+    <script src="leaflet/leaflet.js"/>-->
+</head>
+<body>
+    <div class="sidenav">
+        <h2>Traditional</h2>
+        <h3>Cannabinoids</h3>
+            <a href="index.html?substance=d9thc">d9-THC</a>
+            <a href="index.html?substance=d8thc">d8-THC</a>
+            <a href="index.html?substance=cbd">CBD</a>
+        <h3>Amphetamines</h3>
+            <a href="index.html?substance=amph">Amphetamine</a>
+            <a href="index.html?substance=meth">Methamphetamine</a>
+            <a href="index.html?substance=mdma">MDMA</a>
+        <h3>Hallucinogens</h3>
+        <h4>Tryptamines</h4>
+        <a href="index.html?substance=psilocybin">Psilocybin</a>
+        <h2>Resarch Chemicals</h2>
+        <h3>Cannabinoids</h3>
+        <h3>Stimulants</h3>
+        <h4>Amphetamines</h4>
+            <a href="index.html?substance=2fa">2-FA</a>
+            <a href="index.html?substance=2fma">2-FMA</a>
+            <a href="index.html?substance=3fa">3-FA</a>
+            <a href="index.html?substance=3fpm">3-FPM</a>
+            <a href="index.html?substance=4fmph">4-FMPH</a>
+        <h4>Cathinones</h4>
+        <h3>Hallucinogens</h3>
+        <h4>LSD-Derivatives</h4>
+            <a href="index.html?substance=lsd">LSD-25</a>
+            <a href="index.html?substance=1plsd">1P-LSD</a>
+            <a href="index.html?substance=allad">AL-LAD</a>
+            <a href="index.html?substance=1cplsd">1CP-LSD</a>
+            <a href="index.html?substance=1cpallad">1CP-AL-LAD</a>
+        <h3>Dissociatives</h3>
+        <h4>Arylcyclohexylamines</h4>
+            <a href="index.html?substance=dck">DCK</a>
+            <a href="index.html?substance=2fdck">2FDCK</a>
+            <br><br><br>
+      </div>
+      
+      <div class="main">
+        <h1>Legality of Drugs</h1>
+        <!--<div id="map"></div>-->
+        <!-- Create an element where the map will take place --><br><br><br>
+        <div align=center><svg id="my_dataviz" width="600" height="350"></svg></div>
+        <br><br><br><br>
+        <div align="center" class="smallertext" id="legend"><p><div id="color_grey"></div> no information - <div id="color_red"></div> illegal - <div id="color_orange"></div> medical use only - <div id="color_yellow"></div> decriminalized - <div id="color_green"></div> legal</p></div>
+        
+        <div align="center" class="smallertext" id="copyright"><p>&copy; DrugsMap 2021 | <a href="https://github.com/x88a8/DMAP_Data">This Project on Github</a> | All rights reserved.</p></div>
+        
+    </div>
+    <script type="text/javascript">
+    	const queryString = window.location.search;
+    	const urlParams = new URLSearchParams(queryString);
+        var csv_dir_substance;
+        var prefix='https://raw.githubusercontent.com/x88a8/DMAP_Data/main/csv/';
+
+    	if (urlParams.has('substance')) {
+    		substance = urlParams.get('substance');
+	        var csv_dir_substance = prefix + substance + '.csv';
+    	} else {
+	        var csv_dir_substance = prefix + 'default.csv';
+        }
+
+// The svg
+var svg = d3.select("svg"),
+  width = +svg.attr("width"),
+  height = +svg.attr("height");
+  d3.selectAll('svg').attr("transform", "scale(1.6)");
+// Map and projection
+var path = d3.geoPath();
+var projection = d3.geoMercator()
+  .scale(70)
+  .center([0,20])
+  .translate([width / 2, height / 2]);
+
+// Data and color scale
+var data = d3.map();
+var colorScale = d3.scaleThreshold()
+  .range(["grey", "red", "orange", "yellow", "green"])
+  .domain([0.9, 1.9, 2.9, 3.9]) // 0: no info 1: illegal 2: medical use 3: decriminalized 4: legal
+  
+
+// Load external data and boot
+d3.queue()
+  .defer(d3.json, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
+  .defer(d3.csv, csv_dir_substance, function(d) { data.set(d.code, +d.status); })
+  .await(ready);
+
+function ready(error, topo) {
+
+  let mouseOver = function(d) {
+    d3.selectAll(".Country")
+      .transition()
+      .duration(200)
+      .style("opacity", .5)
+    d3.select(this)
+      .transition()
+      .duration(200)
+      .style("opacity", 1)
+      .style("stroke", "black")
+  }
+
+  let mouseLeave = function(d) {
+    d3.selectAll(".Country")
+      .transition()
+      .duration(200)
+      .style("opacity", .8)
+    d3.select(this)
+      .transition()
+      .duration(200)
+      .style("stroke", "transparent")
+  }
+
+  // Draw the map
+  svg.append("g")
+    .selectAll("path")
+    .data(topo.features)
+    .enter()
+    .append("path")
+      // draw each country
+      .attr("d", d3.geoPath()
+        .projection(projection)
+      )
+      // set the color of each country
+      .attr("fill", function (d) {
+        d.total = data.get(d.id) || 0;
+        return colorScale(d.total);
+      })
+      .style("stroke", "transparent")
+      .attr("class", function(d){ return "Country" } )
+      .style("opacity", .8)
+      .on("mouseover", mouseOver )
+      .on("mouseleave", mouseLeave )
+    }
+
+    </script>
+</body>
+</html>
