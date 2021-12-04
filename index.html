@@ -39,7 +39,7 @@
         <div align=center><svg id="my_dataviz" width="600" height="350"></svg></div>
         <br><br><br><br>
         <div align="center" class="smallertext" id="legend"><p><div id="color_grey"></div> no information - <div id="color_red"></div> illegal - <div id="color_orange"></div> medical use only - <div id="color_yellow"></div> decriminalized - <div id="color_green"></div> legal</p></div>
-        <div align=center class="description"></div>
+        <div align=center class="substance_desc"></div>
         <div align="center" class="smallertext" id="copyright"><p>&copy; DrugsMap 2021 | <a href="credits.html">Credits</a> | All rights reserved.</p></div>
         
     </div>
@@ -52,7 +52,7 @@
     	if (urlParams.has('substance')) {
     		substance = urlParams.get('substance');
 	        var csv_dir_substance = prefix + substance + '.csv';
-          $(".description").load("substances/" + substance + ".html");
+          $(".substance_desc").load("substances/" + substance + ".html");
     	} else {
 	        var csv_dir_substance = prefix + 'default.csv';
         }
